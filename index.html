@@ -25,6 +25,16 @@
 				color:green;
 			}
 		</style>
+		<script>
+			function turnON()
+			{
+				document.getElementById('led1').checked=true;
+			}
+			function turnOFF()
+			{
+				document.getElementById('led1').checked=false;
+			}
+		</script>
 	</head>
 	<body>
 		<h1 class='hh1'>스마트폰에서 램프제어</h1>
@@ -32,8 +42,8 @@
 		<br><br><br>
 		<input id='led1' type='radio'><br>
 		<br><br><br>
-		<button>ON</button>
-		<button>OFF</button>
+		<button onclick='turnON();'>ON</button>
+		<button onclick='turnOFF();'>OFF</button>
 		<br><br><br>
 		<hr color='red'>
 		<h1 class='hh2'>작성자 : 조 영 재</h1>
